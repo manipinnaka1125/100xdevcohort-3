@@ -1,0 +1,7 @@
+js is primarly used for webdevolopment 
+everthing in the web is created using the js
+only the browser can unserstand the html,css,js
+what languages can browser interprett ,the answer is html,css ,js and webassembly 
+technically we can run also using the c++/rust 
+
+js is a intrepreted language --it is executed by line by line 
