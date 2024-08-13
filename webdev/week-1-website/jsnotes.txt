@@ -8,3 +8,75 @@ technically we can run also using the c++/rust
  main red flag of js is-run time errors
 2.js is dynamically type
 
+variables in js are var,const,let 
+we basically use the let and for cosntant things we use the const 
+
+learned about the arrays
+let users=["yuheryhr","mani","pinnaka","hellobhai","maruuer"];
+let tusers=users.length;
+for(let  i=0;i<tusers;i++){
+  console.log("namaste"+users[i]);
+}
+
+
+
+first i have learned about the funtions 
+function canvote(user){
+  if(user>18){
+    return true;
+  }
+  else {
+    return false;
+  }
+
+
+
+function greet(user){
+  console.log("HI"+user.name+" "+user.age+"your gender is"+user.gender);
+}
+let user={//this is meant by objects in js which has key :value which we can store rather than variables
+  name:"dkfdudff",
+  age:10,
+  gender:"male",
+  
+}
+greet(user);
+
+
+
+here we have understood about the proper objects and functions
+function greet(user){
+  console.log("HI Mr/Mrs/Others "+user.name+"your age is: "+user.age);
+}
+function canvote(user){
+  if(user.age>18){
+    console.log("you can vote");
+  }
+  else{
+    console.log("you cannot vote ");
+  }
+}
+let user={
+  name:"maniswaroop",
+  age:20,
+  gender:"male",
+  
+}
+
+greet(user);
+canvote(user);
+
+
+now we go deep into the array of objects
+let user=["maniswaroop",11,{
+  name:"pinnaka",
+  namaste:"bhai",
+  cites:["ap","ch",{
+    bhai:20,
+    birthday:"party",
+    org:["sastra","narataa"],
+  }]
+}]
+console.log(user[2]);
+console.log(user[2].cites);
+console.log(user[2].cites[2].org);
