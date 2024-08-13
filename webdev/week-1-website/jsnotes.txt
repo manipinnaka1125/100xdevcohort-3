@@ -80,3 +80,27 @@ let user=["maniswaroop",11,{
 console.log(user[2]);
 console.log(user[2].cites);
 console.log(user[2].cites[2].org);
+
+
+
+last assignment 
+function solve(arr){
+  let arr2=[];
+  for(let i=0;i<arr.length;i++){
+    if(arr[i].gender=="male"&&arr[i].age>18){
+      arr2.push(arr[i])
+    }
+  }
+  return arr2;
+  }
+
+const user=[{
+  name:"maniswaroop",
+  age:20,
+  gender:"male"
+},{
+name:"hello",
+  age:20,
+  gender:"female"
+}]
+console.log(solve(user));
