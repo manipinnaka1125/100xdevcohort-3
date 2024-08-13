@@ -4,4 +4,7 @@ only the browser can unserstand the html,css,js
 what languages can browser interprett ,the answer is html,css ,js and webassembly 
 technically we can run also using the c++/rust 
 
-js is a intrepreted language --it is executed by line by line 
+1.js is a intrepreted language --it is executed by line by line 
+ main red flag of js is-run time errors
+2.js is dynamically type
+
