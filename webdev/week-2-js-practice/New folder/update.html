@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="display: flex;" id="todo-1">
+<h2>task bhai </h2>
+<button onclick="update()">update</button>
+<button onclick="delete1()">Delete</button>
+        </div>
+       
+
+      
+    </div>
+    <script>
+        function update(){
+            const element=document.querySelector("h2");
+            element.innerHTML="new bhaiiii";
+        }
+        function delete1(){
+            const element=document.getElementById("todo-1");
+            element.parentNode.removeChild(element);
+        }
+    </script>
+</body>
+</html>

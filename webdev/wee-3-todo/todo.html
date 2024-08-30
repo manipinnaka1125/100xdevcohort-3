@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            todo application
+        </title>
+    </head>
+    <body style="background-color: rgb(255, 255, 255);">
+        <div style=" border-radius: 8px; margin-left: 400px; margin-right: 400px;padding-bottom: 300px; margin-top: 150px; align-items: center; background-color: rgb(60, 60, 60);">
+        <center><h1 style="color: rgb(255, 255, 255);">Our To do Application</h1></center>
+       <input style="border-radius: 9px; padding-top: 10px;padding-bottom: 10px; margin-left: 50px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" type="text"></input>
+         <button onclick="addTodo()" style="color: aliceblue; border-radius: 10px; padding: 10px; background-color: rgb(124, 124, 255);">Add Task</button>
+        </div>
+     
+        <script>
+            function addTodo(){
+            const value=document.querySelector("input").value;
+            const spanel=document.createElement("span");
+            const buttonel=document.createElement("button");
+            spanel.innerHTML=value;
+            buttonel.innerHTML="button";
+            const newdiv=document.createElement("div");
+            newdiv.appendChild(spanel);
+            newdiv.appendChild(buttonel);
+            document.querySelector("body").appendChild(newdiv);
+            }
+        </script>
+    </body>
+</html>

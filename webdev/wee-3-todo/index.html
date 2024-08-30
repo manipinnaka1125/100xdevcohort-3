@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <input type="text"></input>
+        <button onclick="addTodo()">add task</button>
+    </body>
+    <script>
+        let ctr = 1;
+        function addTodo() {
+            const inputel = document.querySelector("input");
+            const value = inputel.value;
+            const newdiv = document.createElement("div");
+      
+            newdiv.setAttribute("id", ctr);
+            
+            newdiv.innerHTML = "<div>" + value + '<button onclick="deletetodo(' +ctr + ')">delete</button></div>';
+            document.querySelector("body").appendChild(newdiv);
+            ctr += 1;
+        }
+        
+        function deletetodo(index) {
+            const delete1 = document.getElementById(index);
+            delete1.parentNode.removeChild(delete1);
+        }
+    </script>
+</html>
